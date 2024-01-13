@@ -20,6 +20,19 @@
 .about .left h1{
     color: white;
 }
+.about .left .btn{
+    margin: 1rem,0.2rem;
+    padding: 20px,25px;
+    display: inline-block;
+    padding: 20px 40px; 
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
 .about .right {
     max-width: 700px;
 }
