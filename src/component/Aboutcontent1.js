@@ -10,7 +10,7 @@ const Aboutcontent1 = () => {
       <div className="left">
         <h1>Who Am I ? </h1>
           <p>
-            I am a Fullstack Devloper with skills Java,Html,Css,Javascript,Reactjs,Database
+            I am a Fullstack Devloper with skills <br />Java,Html,Css,Javascript,Reactjs,Database
           </p>
           <Link to="/contact">
             <button className="btn">contact</button>

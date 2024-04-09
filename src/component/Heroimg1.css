@@ -31,24 +31,41 @@
     left: 50%;
     text-align: center;
 }
+
 .hero .content h1{
     color: white;
     font-size: 4rem;
     padding: 0.6rem 0 1.5rem;
 }
+.hero .content h1::selection{
+    background-color: #a70727;
+}
 .hero .content h3{
     color:white;
     font-size: 2rem;
     padding: 0.6rem 0 1.5rem;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+.hero .content h3::selection{
+background-color: #a70727;
 }
 .hero .content p{
     color: white;
     font-size: 1.4rem;
     font-weight: 200;
     text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.hero .content p::selection{
+    background-color: #a70727;
+}
+.hero .content p::first-letter {
+    color: rgb(205, 153, 9);
+    font-size: 50px;
 }
 .content .btn{
-    margin: 1rem,0.2rem;
+    margin: 0.8rem;
     padding: 20px,25px;
     display: inline-block;
     padding: 20px 40px; 
@@ -59,15 +76,38 @@
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    transition: scale 0.3s linear;
 }
-@media  screen and (max-width :640px) {
+.content .btn:hover{
+    scale: 1.2;
+    box-shadow: 0 0 1rem aqua,0 0 1.5rem aqua ,0 0 2rem aqua ,0 0 2.5rem aqua ,0 0 3rem aqua; 
+}
+@media  screen and (max-width :740px) {
     .hero .content h1{
         color: white;
-        font-size: 4rem;
+        font-size: 2rem;
     }
     .hero .content p{
         color: white;
-        font-size: 1.4rem;
+        font-size: 1rem;
+    }
+    .hero .content h3{
+        color: white;
+        font-size: 1rem;
+    }
+    .content .btn{
+        margin: 0.6rem;
+        padding: 15px,35px;
+        display: inline-block;
+        padding: 15px 35px; 
+        font-size: 18px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: scale 0.3s linear;
     }
 }
 

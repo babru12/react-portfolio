@@ -16,7 +16,11 @@
     display: flex;
 }
 .navbar li{
-    padding: 0 1rem;
+    padding: 0 1.5rem;
+    transition: scale 0.3s linear;
+}
+.navbar li:hover{
+    scale: 1.2;
 }
 .navbar li a{
     font-size: 1.2rem;
